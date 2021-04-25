@@ -1,21 +1,44 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Poppins">
         <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
-        <h2>Pokellector Set Downloader</h2>
+        <div class="header">
+            <h1>Pokellector Set Downloader</h1>
+            <div class="action-container">
+                <button type="button" id="download">
+                    Download Set!
+                </button>
+            </div>
+        </div>
+
+        <div class="content">
+        <div class="list">
+            <h2>Instructions</h2>
+            <ol>
+                <li>In your browser, navigate to Pokellector.com</li>
+                <li>Navigate to the set you want to download</li>
+                <li>Click the checklist view for your set on Pokellector.com</li>
+                <li>Check your browser url for this at the end: <em>?list_display=list</em></li>
+                <li>Click the <em>Download Set</em> button</li>
+                <li>A CSV file should download to your device</li>
+            </ol>
+        </div>
+            
+        <h2>About</h2>
         <p>
             Use this extension to download set lists from Pokellector.com in CSV format 
             for your own unique use in a spreadsheet or anything else.
-            </p>
-        <p>
-            In order for the extension to work you must be on a "Set" page that
-            shows the checklist and text. 
-            with <em>list_display=list</em> at the end.
         </p>
         <p>
-            Example Page that works:
+            In order for the extension to work you must be on a "Set" page that
+            shows the checklist and text.  See <em>Instructions</em> above.
+        </p>
+        <p>
+            Example Page that works (As of April 24 2021):
             <a 
                 href="https://www.pokellector.com/sets/BS-Base-Set?list_display=list"
                 target="_blank"
@@ -23,15 +46,21 @@
                 https://www.pokellector.com/sets/BS-Base-Set?list_display=list
             </a>
         </p>
-        <button type="button" id="download">
-            Download Set!
-        </button>
+
+        <h2>Caveats</h2>
+        <p>
+            This is an unofficial extension, if Pokellector.com updates their website,
+            there's a good chance this will stop working until the extension also gets an update.
+        </p>
+    </div>
+
+    <div class="footer">
         <p>
             Note - This extension is not affiliated with Pokellector or the
-            Pokemon company in any way shape or form.  I am just a hobbyist who 
-            wanted to organize the sets I'm collecting in different orders than 
-            is provided by Pokellector.com
+            Pokemon company in any way.  I am just a hobbyist who 
+            wanted a way to organize the sets I'm collecting.
         </p>
+    </div>
     </body>
     <script src="download.js"></script>
 </html>

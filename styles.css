@@ -1,6 +1,6 @@
 button {
     all: unset;
-    background-color: #d9272a;
+    background-color: #dd4043;
     color: white;
     border-radius: 4px;
     cursor: pointer;
@@ -10,7 +10,47 @@ button {
     padding: 8px;
 }
 
+h1 {
+    margin-top: 0;
+    padding-top: 16px;
+}
+
 body {
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    text-align: left;
+    width: 350px;
+    padding: 0px;
+    margin: 0;
+}
+
+.content {
+    padding: 12px;
+}
+
+.header {
     text-align: center;
-    width: 450px;
+    background-color: #5d85bb;
+    color: white;
+}
+
+.footer {
+    background-color: #5d85bb;
+    color: white;
+}
+
+.footer p {
+    margin: 0;
+    padding: 12px;
+}
+
+/* p.footer {
+    padding-top: 32px;
+} */
+
+div.action-container {
+    padding: 16px;
+}
+
+.list {
+    text-align: left;
 }
