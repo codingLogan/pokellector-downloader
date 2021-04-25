@@ -1,10 +1,11 @@
 button {
   all: unset;
-  background-color: #dd4043;
-  color: white;
+  background-color: gold;
+  color: black;
   border-radius: 4px;
   cursor: pointer;
   font-size: 1.2rem;
+  font-weight: bold;
   text-align: center;
   white-space: nowrap;
   padding: 8px;
