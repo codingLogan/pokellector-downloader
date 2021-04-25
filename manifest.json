@@ -1,10 +1,10 @@
 {
-    "name": "Pokellector Download",
-    "description": "Download the sets from Pokellector website",
-    "version": "1.0.0",
-    "manifest_version": 3,
-    "action": {
-        "default_popup": "popup.html"
-    },
-    "permissions": ["activeTab", "scripting"]
+  "name": "Pokellector Download",
+  "description": "Download the sets from Pokellector website",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": ["activeTab", "scripting"]
 }
