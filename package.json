@@ -5,7 +5,7 @@
   "main": "background-worker.js",
   "scripts": {
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
-    "prebuild": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "prebuild": "npm test -w .",
     "build": "node --experimental-vm-modules node_modules/parcel-bundler/bin/cli.js build background-worker.js popup.html",
     "postbuild": "copyfiles manifest.json images/* LICENSE dist"
   },
