@@ -4,11 +4,10 @@
   "description": "Allows you to create CSV files of your sets on Pokellector.com",
   "main": "background-worker.js",
   "scripts": {
-    "test": "jest",
-    "jest-win": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
     "prebuild": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
-    "build": "node --experimental-vm-modules node_modules/parcel-bundler/bin/cli.js build background-worker.js",
-    "postbuild": "copyfiles manifest.json download.js images/* LICENSE popup.html styles.css dist"
+    "build": "node --experimental-vm-modules node_modules/parcel-bundler/bin/cli.js build background-worker.js popup.html",
+    "postbuild": "copyfiles manifest.json images/* LICENSE dist"
   },
   "repository": {
     "type": "git",
