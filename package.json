@@ -1,0 +1,33 @@
+{
+  "name": "pokellector-downloader",
+  "version": "1.0.0",
+  "description": "Allows you to create CSV files of your sets on Pokellector.com",
+  "main": "background-worker.js",
+  "scripts": {
+    "test": "jest",
+    "jest-win": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "prebuild": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "build": "node --experimental-vm-modules node_modules/parcel-bundler/bin/cli.js build background-worker.js",
+    "postbuild": "copyfiles manifest.json download.js images/* LICENSE popup.html styles.css dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Loganras/pokellector-downloader.git"
+  },
+  "author": "loganras_dev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Loganras/pokellector-downloader/issues"
+  },
+  "homepage": "https://github.com/Loganras/pokellector-downloader#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "copyfiles": "^2.4.1",
+    "jest": "^26.6.3",
+    "parcel-bundler": "^1.12.5"
+  },
+  "jest": {
+    "transform": {}
+  },
+  "type": "module"
+}
